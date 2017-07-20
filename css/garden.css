@@ -20,19 +20,32 @@ p {
 header {
   background-image: url(../images/huntington.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 310px;
 }
 
 h1 {
   color: #fff;
   font-size: 3.2em;
   font-weight: normal;
-  margin-top: 0px;
-  margin-left: 310px;
-  padding-top: 100px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 5em;
+  padding-top: 1.6em;
 }
 
+.tiny {
+  font-weight: 200;
+}
+
+h2 {
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: 400;
+  padding-left: 10em;
+}
 
 .explore, .Steady, .hope {
   padding: 3em 4em 4em 9em;
