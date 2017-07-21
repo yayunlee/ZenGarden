@@ -1,6 +1,7 @@
 body {
   font-family: 'Libre Baskerville', sans-serif;
   color: #325050;
+  margin: 0px;
 }
 
 h3 {
@@ -31,8 +32,21 @@ h1 {
   font-weight: normal;
   margin-top: 0em;
   margin-bottom: 0em;
-  margin-left: 5em;
-  padding-top: 1.6em;
+  margin-left: 2.5em;
+  padding-top: 1.5em;
+}
+
+h1::before {
+  background: url(../images/enso.svg);
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  content: "";
+  background-size: 100%;
+  opacity: 0.6;
+  position: relative;
+  top: 65px;
+  margin: -65px 40px 0px 0px;
 }
 
 .tiny {
@@ -44,14 +58,175 @@ h2 {
   font-size: 1.6em;
   font-style: italic;
   font-weight: 400;
-  padding-left: 10em;
+  padding-left: 11.4em;
 }
 
 .explore, .Steady, .hope {
   padding: 3em 4em 4em 9em;
-  width: 51%;
+  /*width: 51%;*/
 }
 
 .Steady {
   background-color: rgba(138,188,159,0.5);
 }
+
+#mode {
+  width: 66%;
+}
+
+.contentinfo {
+  background-image: url(../images/koi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0px;
+  padding: 96px 154px;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  text-align: center;
+}
+
+.paragraph {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.paragraph:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 3em 10%;
+  color: #fff;
+  background: #134347;
+  text-align: center;
+
+
+}
+/*
+footer a::before {
+  display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      overflow: visible;
+      font-size: 36px;
+      text-indent: 0;
+      font-family: 'verdemoderna';
+      speak: none;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+}
+*/
+
+/*
+footer a.zen-validate-html::before {
+  content: "5";
+}
+
+footer a.zen-validate-css:hover::before, footer a.zen-validate-css:focus::before {
+  content: "#";
+}
+
+footer a.zen-validate-css::before {
+  content: "3";
+}
+*/
+
+#sidebar1 {
+  position: absolute;
+  top: 360px;
+  right: 0px;
+  background-color: #edf4f0;
+  width: 34%;
+  /*height: 200%;*/
+}
+
+#sidebar1 ul {
+  list-style: none;
+}
+
+#sidebar1 ul li {
+  padding-bottom: 22px;
+  margin-top: 22px;
+  margin-left: 63px;
+  border-bottom: solid 1px #d9e3dc;
+}
+
+#sidebar1 ul li a {
+  text-decoration: none;
+}
+
+#sidebar1 ul li a:link,a:visited {
+  color: #607476;
+}
+
+#sidebar1 ul li a:hover {
+  color: #49968e;
+}
+
+#sidebar1 ul li a.design-name {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#sidebar1 ul li a.designer-name {
+  font-size: 18px;
+  font-family: serif;
+}
+
+span.gray {
+  color: #c0cac3;
+  font-style: italic;
+}
+
+#sidebar2 {
+  position: absolute;
+  top: 1465px;
+  right: 0px;
+  background-color: #edf4f0;
+  width: 34%;
+  /*height: 120%;*/
+  font-size: 19px;
+}
+
+#sidebar2 ul {
+  list-style: none;
+  margin: 0 29.4% 0 14.7%;
+  padding-left: 0px;
+}
+
+#sidebar2 ul li {
+  list-style: none;
+  border-top: solid 1px #a0b9ad;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#sidebar2 ul li a {
+  text-decoration: none;
+}
+
+#sidebar2 ul li a:link,a:visited {
+  color: #607476;
+}
+
+#sidebar2 ul li a:hover {
+  color: #49968e;
+}
+/*
+aside {
+  position: absolute;
+  top: 360px;
+  right: 0px;
+  background-color: #edf4f0;
+}
+*/
+/*.change {
+  height: 80%;
+}*/
