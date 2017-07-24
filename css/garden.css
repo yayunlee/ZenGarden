@@ -4,6 +4,18 @@ body {
   margin: 0px;
 }
 
+.file {
+  text-decoration: none;
+}
+
+.file:link, .file:visited{
+  color: #0d8ba1;
+}
+
+.file:hover {
+  color: #0599c2;
+}
+
 h3 {
   font-family: 'Julius Sans One', sans-serif;
   color: #2e484c;
@@ -63,15 +75,11 @@ h2 {
 
 .explore, .Steady, .hope {
   padding: 3em 4em 4em 9em;
-  /*width: 51%;*/
 }
 
-.Steady {
-  background-color: rgba(138,188,159,0.5);
-}
-
-#mode {
+#main {
   width: 66%;
+  border-right: solid 1px #d9e3dc;
 }
 
 .contentinfo {
@@ -102,49 +110,22 @@ footer {
   color: #fff;
   background: #134347;
   text-align: center;
-
-
-}
-/*
-footer a::before {
-  display: block;
-      position: absolute;
-      top: 3px;
-      left: 0;
-      overflow: visible;
-      font-size: 36px;
-      text-indent: 0;
-      font-family: 'verdemoderna';
-      speak: none;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-}
-*/
-
-/*
-footer a.zen-validate-html::before {
-  content: "5";
 }
 
-footer a.zen-validate-css:hover::before, footer a.zen-validate-css:focus::before {
-  content: "#";
+.zen-license {
+  margin: 0 3em;
 }
 
-footer a.zen-validate-css::before {
-  content: "3";
+.zen-license:link, .zen-license:visited {
+  color: #607476;
 }
-*/
+
+.zen-license:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 #sidebar1 {
-  position: absolute;
-  top: 360px;
-  right: 0px;
-  background-color: #edf4f0;
-  width: 34%;
-  /*height: 200%;*/
+  margin-bottom: 18em;
 }
 
 #sidebar1 ul {
@@ -186,26 +167,23 @@ span.gray {
 }
 
 #sidebar2 {
-  position: absolute;
-  top: 1465px;
-  right: 0px;
-  background-color: #edf4f0;
-  width: 34%;
-  /*height: 120%;*/
   font-size: 19px;
 }
 
 #sidebar2 ul {
   list-style: none;
-  margin: 0 29.4% 0 14.7%;
-  padding-left: 0px;
+  margin-right: 29.4%;
 }
 
 #sidebar2 ul li {
-  list-style: none;
-  border-top: solid 1px #a0b9ad;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-left: 63px;
+  border-top: solid 1px #a0b9ad;
+}
+
+#sidebar2 ul .zen-translations {
+  border-bottom: solid 1px #a0b9ad;
 }
 
 #sidebar2 ul li a {
@@ -219,14 +197,10 @@ span.gray {
 #sidebar2 ul li a:hover {
   color: #49968e;
 }
-/*
+
 aside {
   position: absolute;
-  top: 360px;
+  top: 344px;
   right: 0px;
-  background-color: #edf4f0;
+  width: 34%;
 }
-*/
-/*.change {
-  height: 80%;
-}*/
