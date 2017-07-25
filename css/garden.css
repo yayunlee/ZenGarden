@@ -29,13 +29,35 @@ p {
   line-height: 2;
 }
 
-
 header {
   background-image: url(../images/huntington.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 310px;
+}
+
+.browse {
+  position: absolute;
+  top: 120px;
+  right: 90px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.browse:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.browse a.all {
+  display: inline-block;
+  text-decoration: none;
+  padding: 22px 70px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 19px;
+}
+
+.browse a.all:hover {
+  color: #fff;
 }
 
 h1 {
@@ -73,13 +95,37 @@ h2 {
   padding-left: 11.4em;
 }
 
-.explore, .Steady, .hope {
+.explore, .steady, .hope {
   padding: 3em 4em 4em 9em;
 }
 
-#main {
+.explore1, .steady2, .hope1 {
   width: 66%;
   border-right: solid 1px #d9e3dc;
+}
+
+.steady1 {
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(../images/bamboo.png), url(../images/contours-opaque.png),
+  url(../images/gridlines-opaque.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.download {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.download:link, .download:visited {
+  color: #a9b995;
+}
+
+.download:hover {
+  color: #fff;
+  background-color: #3d8a9f;
 }
 
 .contentinfo {
@@ -203,4 +249,59 @@ aside {
   top: 344px;
   right: 0px;
   width: 34%;
+}
+
+@media print, screen and (max-width: 1100px) {
+
+  body {
+    font-size: 13px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .browse {
+    position: static;
+    text-align: center;
+  }
+
+  .summary, .preamble, .explanation, .participation, .benefits {
+    margin-bottom: 40px;
+  }
+
+  .summary {
+    margin-top: 30px;
+  }
+
+  .participation {
+    padding-top: 30px;
+  }
+
+  .benefits {
+    padding-bottom: 30px;
+  }
+
+  .hope {
+    margin-bottom: 30px;
+  }
+
+  .explore1, .steady2, .hope1 {
+    width: 100%;
+    border-right: none;
+  }
+
+  .explore, .steady, .hope {
+    padding: 0 10%;
+  }
+
+
+
+  aside {
+    position: static;
+  }
 }
