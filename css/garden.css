@@ -30,6 +30,7 @@ p {
 }
 
 header {
+  border-top: solid 10px rgba(19, 67, 71, 0.9);
   background-image: url(../images/huntington.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -112,7 +113,6 @@ h2 {
   background-position: center;
   background-size: cover;
 }
-
 
 .download {
   display: inline-block;
@@ -265,9 +265,41 @@ aside {
     height: auto;
   }
 
+  h1 {
+    font-size: 35px;
+    padding-top: 0.5em;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  h1::before {
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-right: 20px;
+    width: 70px;
+    height: 120px;
+  }
+
+  h2 {
+    padding-left: 5.4em;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
   .browse {
     position: static;
     text-align: center;
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .browse a.all {
+    display: block;
+    font-size: 16px;
+  }
+
+  .browse:hover {
+    background-color: rgba(255,255,255,0.35);
   }
 
   .summary, .preamble, .explanation, .participation, .benefits {
@@ -299,9 +331,164 @@ aside {
     padding: 0 10%;
   }
 
+  .contentinfo {
+    font-size: 22px;
+    padding: 2em 12%;
+  }
 
+  footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .zen-license {
+    margin: 0 2em;
+  }
 
   aside {
     position: static;
+    width: auto;
+  }
+
+  #sidebar1 {
+    margin-bottom: 0px;
+  }
+
+  #sidebar1 ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #sidebar1 ul li {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 22px;
+  }
+
+  #sidebar1 ul li:nth-child(2n+1) {
+    float: left;
+    padding-left: 5%;
+  }
+
+  #sidebar1 ul li.mid {
+    margin-top: 0px;
+  }
+
+  #sidebar1 ul li:nth-child(2n) {
+    background-color: #edf4f0;
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  #sidebar1 ul li a.design-name {
+    font-size: 17px;
+  }
+
+  #sidebar1 ul li a.designer-name {
+    font-size: 16px;
+  }
+
+  #sidebar2 {
+    font-size: 16px;
+  }
+
+  #sidebar2 ul {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  #sidebar2 ul li {
+    margin-left: 0px;
+    border-top: none;
+  }
+  #sidebar2 ul li.zen-translations {
+    border-bottom: none;
+  }
+
+  #sidebar2 ul li:nth-child(2n+1) {
+    float: left;
+    padding-left: 5%;
+  }
+
+  #sidebar2 ul li:nth-child(2n) {
+    text-align: right;
+    border-bottom: solid 1px #a0b9ad;
+    padding-right: 5%;
+    background-color: rgba(138,188,159,0.5);
+  }
+
+  #sidebar2 ul li.zen-translations {
+    border-bottom: solid 1px #a0b9ad;
+    width: 100%;
+  }
+
+  #sidebar2 ul li.resources {
+    border-top: solid 1px #a0b9ad;
+  }
+
+  #sidebar2 ul li.zen-translations {
+    background-color: rgba(138,188,159,0.5);
+  }
+}
+
+@media print, screen and (max-width: 600px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  h1::before {
+    width: 50px;
+    height: 95px;
+  }
+
+  header {
+    padding-top: 30px;
+  }
+
+  h2 {
+    padding-left: 3.4em;
+    font-size: 17px;
+    margin-bottom: 1.5em;
+  }
+
+  .contentinfo {
+    padding: 2em 4.3%;
+  }
+}
+
+@media print, screen and (max-width: 500px) {
+
+  h1 {
+    padding-top: 0px;
+  }
+
+  h1::before {
+    display: block;
+    left: 44%;
+    padding: 0 0 35px 0;
+  }
+
+  header {
+    padding-top: 20px;
+  }
+
+  h2 {
+    padding-left: 0px;
+    margin-bottom: 0.4em;
+  }
+
+  .contentinfo {
+    padding: 1em 4.3%;
+  }
+
+  aside #sidebar1 ul li a.design-name {
+    font-size: 15px;
+  }
+
+  aside #sidebar1 ul li a.designer-name {
+    font-size: 14px;
   }
 }
