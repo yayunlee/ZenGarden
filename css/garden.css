@@ -422,7 +422,7 @@ aside {
 
   #sidebar2 ul li.zen-translations {
     border-bottom: solid 1px #a0b9ad;
-    width: 100%;
+    float: none;
   }
 
   #sidebar2 ul li.resources {
