@@ -185,6 +185,16 @@ footer {
   border-bottom: solid 1px #d9e3dc;
 }
 
+/*#sidebar1 ul li.verde {
+  border-bottom: none;
+}*/
+#sidebar1 ul li.jimmy {
+  border-bottom: none;
+}
+
+
+
+
 #sidebar1 ul li a {
   text-decoration: none;
 }
@@ -491,4 +501,12 @@ aside {
   aside #sidebar1 ul li a.designer-name {
     font-size: 14px;
   }
+  /*
+  #sidebar1 ul li.jimmy {
+    width: 100px;
+  }*/
 }
+/*
+#sidebar1 ul li.jimmy {
+  width: 100px;
+}*/
